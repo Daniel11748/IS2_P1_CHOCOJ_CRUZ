@@ -31,12 +31,57 @@
             justify-content: space-between;
             margin-bottom: 20px;
         }
-        hr{
+
+        hr {
             height: 3px;
             background-color: #333;
             border-color: black;
             margin-top: -15px;
-            
+
+        }
+
+        form input {
+            width: 37%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #2835a7;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .total {
+            text-align: right;
+            font-size: 1.2em;
+            color: #ffbb00;
         }
     </style>
 </head>
@@ -46,8 +91,8 @@
         <h1>Lista de Compras</h1>
         <hr>
         <form id="productoForm">
-            <input type="text" id="productoName" placeholder="Nombre del producto" required>
-            <input type="number" id="productoPrice" placeholder="Precio del producto" required>
+            <input type="text" id="productoNombre" placeholder="Nombre del producto" required>
+            <input type="number" id="productoPrecio" placeholder="Precio del producto" required>
             <button type="submit">Añadir Producto</button>
         </form>
         <table id="productoTable">
