@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras de Supermercado</title>
+    <style>
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <form id="productoForm">
+            <input type="text" id="productoName" placeholder="Nombre del producto" required>
+            <input type="number" id="productoPrice" placeholder="Precio del producto" required>
+            <button type="submit">Añadir Producto</button>
+        </form>
+        <table id="productoTable">
+            <thead>
+                <tr>
+                    <th>Productoo</th>
+                    <th>Precio</th>
+                    <th>Comprado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Productoos se agregarán aquí -->
+            </tbody>
+        </table>
+        <div class="total">
+            Total comprado: Q<span id="totalcomprado">0.00</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
